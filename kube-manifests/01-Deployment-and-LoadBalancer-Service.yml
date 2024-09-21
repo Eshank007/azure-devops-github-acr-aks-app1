@@ -14,10 +14,6 @@ spec:
       labels:
         app: app1-nginx
     spec:
-      tolerations:
-        - key: "CriticalAddonsOnly"
-          operator: "Exists"
-          effect: "NoSchedule"
       containers:
         - name: app1-nginx
           image: myacr007.azurecr.io/app1nginxaks
